@@ -1,24 +1,24 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import ViteComponents from 'vite-plugin-components'
-import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
-import Markdown from 'vite-plugin-md'
+import Components from 'unplugin-vue-components/vite'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineConfig({
 	plugins: [
 		vue({
 			include: [/\.vue$/, /\.md$/]
 		}),
-		Markdown(),
-		ViteComponents({
-			customComponentResolvers: [
-				ViteIconsResolver({
-					componentPrefix: ''
-				})
-			]
+
+		Components({
+			resolvers: IconsResolver({
+				componentPrefix: ''
+			}),
+			dts: true,
+			include: [/\.vue$/, /\.vue\?vue/, /\.md$/]
 		}),
-		ViteIcons()
+		Icons()
 	],
 	resolve: {
 		alias: {
@@ -26,6 +26,9 @@ export default defineConfig({
 		}
 	},
 	server: {
-		open: true
+		open: true,
+		fs: {
+			allow: ['..']
+		}
 	}
 })

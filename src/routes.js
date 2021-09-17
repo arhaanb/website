@@ -1,7 +1,6 @@
 import Home from './views/Home.vue'
 import Projects from './views/Projects.vue'
 import Explore from './views/Explore.vue'
-import Sahay from './views/projects/sahay.vue'
 import NotFound from './views/NotFound.vue'
 
 export const routes = [
@@ -16,7 +15,6 @@ export const routes = [
 		meta: { title: 'Explore' },
 		component: Explore
 	},
-	// { path: '/p/sahay', component: Sahay },
 	{ path: '/404', component: NotFound, meta: { title: 'notfound' } },
 	{ path: '/:pathMatch(.*)', component: NotFound, meta: { title: 'notfound' } }
 ]

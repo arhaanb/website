@@ -15,10 +15,10 @@
 		"trailingComma": "none"
 	},
 	"dependencies": {
-		"@iconify/json": "^1.1.353",
+		"@iconify/json": "^1.1.402",
 		"@sendgrid/mail": "^7.4.4",
-		"@vueuse/core": "^4.8.4",
-		"@vueuse/head": "^0.5.1",
+		"@vueuse/core": "^6.3.3",
+		"@vueuse/head": "^0.6.0",
 		"axios": "^0.21.2",
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
@@ -26,19 +26,18 @@
 		"nprogress": "^0.2.0",
 		"querystring": "^0.2.1",
 		"swrv": "^1.0.0-beta.8",
-		"vue": "^3.1.1",
-		"vue-router": "^4.0.8"
+		"vue": "^3.2.11",
+		"vue-router": "^4.0.11"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-vue": "^1.2.3",
-		"@vue/compiler-sfc": "^3.1.1",
-		"@vue/server-renderer": "^3.1.1",
+		"@vue/compiler-sfc": "^3.2.11",
+		"@vue/server-renderer": "^3.2.11",
 		"cross-env": "^7.0.3",
-		"sass": "^1.32.10",
-		"vite": "^2.3.7",
-		"vite-plugin-components": "^0.10.4",
-		"vite-plugin-icons": "^0.6.1",
-		"vite-plugin-md": "^0.6.7",
-		"vite-ssg": "^0.11.2"
+		"sass": "^1.41.1",
+		"unplugin-icons": "^0.11.3",
+		"unplugin-vue-components": "^0.15.2",
+		"vite": "^2.5.8",
+		"vite-ssg": "^0.15.1"
 	}
 }
