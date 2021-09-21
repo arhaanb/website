@@ -5,6 +5,8 @@ import NProgress from 'nprogress'
 import './assets/css/normal.css'
 import './assets/css/skeleton.css'
 import './assets/css/global.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export const createApp = ViteSSG(
 	App,
@@ -22,6 +24,9 @@ export const createApp = ViteSSG(
 		}
 	},
 	({ app, router, isClient }) => {
+		// @ts-ignore
+		app.use(AOS.init())
+
 		if (isClient) {
 			router.beforeEach(() => {
 				NProgress.start()

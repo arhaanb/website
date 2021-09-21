@@ -62,7 +62,10 @@
 			</transition>
 		</main>
 
-		<div v-if="$route.meta.title !== 'notfound'" class="cont">
+		<div
+			v-if="$route.meta.title !== 'notfound'"
+			class="cont"
+		>
 			<Footer :class="`footer footer-${$route.meta.title}`" />
 		</div>
 	</main>

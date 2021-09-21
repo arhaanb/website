@@ -1,40 +1,45 @@
 <template>
 	<div class="cont">
-		<img class="topimg" src="/me.jpeg" alt="Arhaan Bahadur" draggable="false" />
+		<img
+			data-aos="fade-right"
+			class="topimg"
+			src="/me.jpeg"
+			alt="Arhaan Bahadur"
+			draggable="false"
+		/>
 		<br />
-		<h4 class="name">Arhaan Bahadur</h4>
 
-		<div class="yo" style="margin-bottom: 1.2em">
-			<h6 class="zero">designer &middot; developer</h6>
+		<div data-aos="fade-in">
+			<h4 class="name">Arhaan Bahadur</h4>
+			<div class="yo" style="margin-bottom: 1.2em">
+				<h6 class="zero">designer &middot; developer</h6>
+			</div>
+
+			<p>
+				Hey! I'm {{ `${prefix} ${age}` }} year old developer and designer. I
+				enjoy participating in Hackathons and Design events, and I've won
+				several of them over the last few years. You can view some of the
+				<router-link to="/projects">projects</router-link> I built, or check out
+				<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
+			</p>
+
+			<p>
+				Recently, I co-founded
+				<a href="//delhifoundry.co" target="_blank">Delhi Design Foundry</a>
+				with a few of my friends, and I'm working there as a full-stack engineer
+				and designer. In 2020, I was the President of my school's technology and
+				entrepreneurship club &mdash;
+				<a href="//minet.co" target="_blank">MINET</a>.
+			</p>
+
+			<p class="zero">
+				I make functional and useful products with beautiful user experiences.
+				I'm always looking for opportunities to work on new projects and try out
+				new technologies. If you want to say hi or work with me, feel free to
+				<router-link to="/explore#contact">contact me</router-link> on any of my
+				socials.
+			</p>
 		</div>
-
-		<!-- studying at The Mother's International School.  -->
-		<p>
-			Hey! I'm {{ `${prefix} ${age}` }} year old
-			<!-- full-stack -->
-			developer and designer. I enjoy participating in Hackathons and Design
-			events, and I've won several of them over the last few years. You can view
-			some of the
-			<router-link to="/projects">projects</router-link> I built, or check out
-			<a href="//github.com/arhaanb" target="_blank">my GitHub account</a>.
-		</p>
-
-		<p>
-			Recently, I co-founded
-			<a href="//delhifoundry.co" target="_blank">Delhi Design Foundry</a> with
-			a few of my friends, and I'm working there as a full-stack engineer and
-			designer. In 2020, I was the President of my school's technology and
-			entrepreneurship club &mdash;
-			<a href="//minet.co" target="_blank">MINET</a>.
-		</p>
-
-		<p class="zero">
-			I make functional and useful products with beautiful user experiences. I'm
-			always looking for opportunities to work on new projects and try out new
-			technologies. If you want to say hi or work with me, feel free to
-			<router-link to="/explore#contact">contact me</router-link> on any of my
-			socials.
-		</p>
 	</div>
 </template>
 

@@ -29,7 +29,7 @@ import useSWRV from 'swrv'
 var url = ''
 
 if (process.env.NODE_ENV == 'development') {
-	url = 'https://arhaanbahadur.co/api/spotify'
+	url = 'https://spotifydev.vercel.app/api/spotify'
 } else {
 	url = '/api/spotify'
 }

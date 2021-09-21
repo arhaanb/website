@@ -18,13 +18,14 @@
 				description="A collaborative experience for hospital management."
 				link="https://sahay.us"
 				img="https://res.cloudinary.com/arhaanb/image/upload/smlsahay.png"
+				data-aos-delay="100"
 			/>
 
 			<Project
-				name="MINET X"
-				description="The Mother's International School's annual Interschool Tech Symposium."
-				link="https://2020.minet.co"
-				img="https://res.cloudinary.com/arhaanb/image/upload/minetx.gif"
+				name="Link+AI"
+				description="A mobile app to help you improve your LinkedIn profile and view beautiful stats."
+				link="https://linkplusai.com"
+				img="https://i.imgur.com/u8g9pHc.png"
 			/>
 
 			<Project
@@ -32,6 +33,13 @@
 				description="A consolidated bug bounty platform for Indian startups and projects."
 				link="https://www.behance.net/gallery/112423317/BugBase-an-Indian-Bug-Bounty-Program"
 				img="https://res.cloudinary.com/arhaanb/image/upload/bugbase.png"
+			/>
+
+			<Project
+				name="MINET X"
+				description="The Mother's International School's annual Interschool Tech Symposium."
+				link="https://2020.minet.co"
+				img="https://res.cloudinary.com/arhaanb/image/upload/minetx.gif"
 			/>
 
 			<Project
@@ -44,7 +52,7 @@
 
 		<hr />
 
-		<div class="others">
+		<div data-aos="fade-in" data-aos-duration="500" class="others">
 			<div @mouseover="hover = false">
 				<h2 class="othsmlproj">Other small projects</h2>
 				<p>

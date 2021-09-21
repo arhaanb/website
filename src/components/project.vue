@@ -1,6 +1,6 @@
 <template>
-	<div class="project noselect">
-		<a class="link" :href="link" target="_blank">
+	<div data-aos="fade-up" data-aos-duration="500" class="project noselect">
+		<a v-if="!intlink" class="link" :href="link" target="_blank">
 			<div class="card">
 				<img loading="lazy" class="img" :alt="name" :src="img" />
 				<div class="info">
@@ -9,12 +9,28 @@
 				</div>
 			</div>
 		</a>
+
+		<router-link v-else class="link" :to="link">
+			<div class="card">
+				<img loading="lazy" class="img" :alt="name" :src="img" />
+				<div class="info">
+					<h1 class="title"><span v-html="title"></span></h1>
+					<p class="txt" v-html="desc"></p>
+				</div>
+			</div>
+		</router-link>
 	</div>
 </template>
 
 <script>
 export default {
-	props: { name: String, description: String, link: String, img: String },
+	props: {
+		name: String,
+		description: String,
+		link: String,
+		img: String,
+		intlink: Boolean
+	},
 	data() {
 		return {
 			title: this.$props.name,

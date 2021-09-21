@@ -19,6 +19,7 @@
 		"@sendgrid/mail": "^7.4.4",
 		"@vueuse/core": "^6.3.3",
 		"@vueuse/head": "^0.6.0",
+		"aos": "^2.3.4",
 		"axios": "^0.21.2",
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
