@@ -8,7 +8,8 @@
 		{
 			"source": "/ponder/:match*",
 			"destination": "https://ponder.vercel.app/:match*"
-		}
+		},
+		{ "source": "/(.*)", "destination": "/index.html" }
 	],
 	"github": {
 		"autoAlias": true,

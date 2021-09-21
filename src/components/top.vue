@@ -4,11 +4,7 @@
 		<p>My top tracks from Spotify this month</p>
 
 		<div v-if="songs">
-			<div
-				v-for="(song, index) in songs.slice(0, 5)"
-				:key="song.songUrl"
-				data-aos="fade-right"
-			>
+			<div v-for="(song, index) in songs.slice(0, 5)" :key="song.songUrl">
 				<a target="_blank" :href="song.songUrl">
 					<div class="song">
 						<div class="flex">
@@ -29,7 +25,7 @@
 			</div>
 		</div>
 		<div v-else>
-			<div v-for="i in 5" :key="i" data-aos="fade-right">
+			<div v-for="i in 5" :key="i">
 				<div class="song loading">
 					<div class="flex">
 						<h1 class="index noselect mono">
@@ -73,7 +69,7 @@ export default {
 	methods: {
 		getSongs() {
 			if (process.env.NODE_ENV == 'development') {
-				url = 'https://spotifydev.vercel.app/api/top-tracks'
+				url = 'https://arhaanbahadur.co/api/top-tracks'
 			} else {
 				url = '/api/top-tracks'
 			}

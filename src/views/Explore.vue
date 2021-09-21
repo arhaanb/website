@@ -4,7 +4,7 @@
 		<p class="sub">Miscellaneous stuff about me.</p>
 
 		<a href="//arhn.us/design" target="_blank">
-			<div data-aos="fade-up" id="design" class="coolbox">
+			<div id="design" class="coolbox">
 				<div class="flexbox">
 					<h6>Design</h6>
 					<span><bx-bx-link-external /></span>
@@ -17,7 +17,7 @@
 		</a>
 
 		<a href="//arhn.us/exp" target="_blank">
-			<div data-aos="fade-up" data-aos-delay="100" id="events" class="coolbox">
+			<div id="events" class="coolbox">
 				<div class="flexbox">
 					<h6>Achievements</h6>
 					<span><bx-bx-link-external /></span>
@@ -30,7 +30,7 @@
 		</a>
 
 		<a href="//arhn.us/events" target="_blank">
-			<div data-aos="fade-up" data-aos-delay="200" id="organ" class="coolbox">
+			<div id="organ" class="coolbox">
 				<div class="flexbox">
 					<h6>Events</h6>
 					<span><bx-bx-link-external /></span>
@@ -46,9 +46,9 @@
 
 		<Top id="top-tracks" style="margin-bottom: 4em" />
 
-		<Website data-aos="fade-in" data-aos-delay="150" />
+		<Website />
 
-		<Contact data-aos="fade-in" data-aos-delay="150" style="margin-top: 4em" />
+		<Contact style="margin-top: 4em" />
 	</div>
 </template>
 

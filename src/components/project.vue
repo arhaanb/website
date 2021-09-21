@@ -101,7 +101,6 @@ export default {
 		margin-bottom: 0.5em;
 	}
 }
-
 @media (max-width: 750px) {
 	.card {
 		height: 10em;
@@ -126,7 +125,6 @@ export default {
 		}
 	}
 }
-
 .link {
 	text-decoration: none;
 }

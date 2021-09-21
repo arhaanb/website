@@ -52,7 +52,7 @@
 
 		<hr />
 
-		<div data-aos="fade-in" data-aos-duration="500" class="others">
+		<div class="others">
 			<div @mouseover="hover = false">
 				<h2 class="othsmlproj">Other small projects</h2>
 				<p>

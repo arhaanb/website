@@ -214,9 +214,6 @@ button.cool:disabled {
 		width: 60%;
 		margin-top: 0.75em;
 	}
-	form {
-		margin-bottom: 0;
-	}
 }
 
 .flex-centerbro {
