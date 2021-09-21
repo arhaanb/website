@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite",
-		"build": "cross-env NODE_ENV=production vite-ssg build",
+		"build-ssg": "cross-env NODE_ENV=production vite-ssg build",
+		"build": "vite build",
 		"serve": "vite preview"
 	},
 	"prettier": {
